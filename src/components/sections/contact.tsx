@@ -4,7 +4,6 @@ import { profile } from "@/lib/data";
 export function Contact() {
   return (
     <section id="contact" className="mx-auto max-w-5xl border-t border-border px-6 py-16">
-      <p className="mb-2 font-mono text-xs uppercase tracking-[0.2em] text-signal">Sheet 06</p>
       <h2 className="mb-4 font-display text-2xl font-bold text-ink">Get in touch</h2>
       <p className="mb-8 max-w-md text-sm leading-relaxed text-muted">
         Open to senior frontend roles and interesting product work. Reach out directly, I read

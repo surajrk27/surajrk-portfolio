@@ -7,7 +7,7 @@ export const profile = {
   linkedin: "https://www.linkedin.com/in/suraj-khandbale-7b33ba14b",
   summary:
     "Senior Frontend Engineer with 6+ years building scalable, high-performance web applications with React, Next.js, Angular, and Vue. I translate Figma and Zeplin designs into responsive, accessible, pixel-perfect interfaces, with a focus on component-driven architecture, state management, and performance.",
-  tagline: "Turning Figma files into pixel-perfect, accessible interfaces.",
+  tagline: "6+ years shipping component-driven, accessible frontends — from Figma handoff through state management and API integration — across EdTech, fintech, and SaaS products.",
   resumeUrl: "/suraj-khandbale-resume.pdf",
 } as const;
 

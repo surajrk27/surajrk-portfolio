@@ -26,7 +26,7 @@ function CropMarks() {
 
 export function Hero() {
   return (
-    <section id="top" className="relative mx-auto max-w-5xl px-6 py-20 md:py-28">
+    <section id="top" className="relative mx-auto max-w-5xl px-6 py-20 md:py-24">
       <CropMarks />
 
       <motion.div
@@ -40,7 +40,7 @@ export function Hero() {
             variants={item}
             className="mb-6 font-mono text-xs uppercase tracking-[0.2em] text-muted"
           >
-            Sheet 01 — <span className="text-signal">Senior Frontend Engineer</span> · 6+ yrs
+            Profile — <span className="text-signal">Senior Frontend Engineer</span> · 6+ yrs
           </motion.p>
 
           <motion.h1
@@ -90,7 +90,7 @@ export function Hero() {
               Stack
             </p>
             <span className="-rotate-3 border border-signal px-2 py-0.5 font-mono text-[10px] uppercase tracking-[0.1em] text-signal">
-              Available
+              Open to work
             </span>
           </div>
 

@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
 import { ThemeToggle } from "@/components/ui/theme-toggle";
-import { GridOverlayToggle } from "@/components/ui/grid-overlay-toggle";
+import { CommandPalette } from "@/components/ui/command-palette";
 import { profile } from "@/lib/data";
 
 const links = [
@@ -50,7 +50,7 @@ export function Nav() {
         </nav>
 
         <div className="flex items-center gap-2">
-          <GridOverlayToggle />
+          <CommandPalette />
           <ThemeToggle />
           <button
             type="button"

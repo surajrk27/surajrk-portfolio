@@ -6,7 +6,6 @@ import { skillGroups } from "@/lib/data";
 export function Skills() {
   return (
     <section id="skills" className="mx-auto max-w-5xl border-t border-border px-6 py-16">
-      <p className="mb-2 font-mono text-xs uppercase tracking-[0.2em] text-signal">Sheet 04</p>
       <h2 className="mb-10 font-display text-2xl font-bold text-ink">Areas of expertise</h2>
 
       <div className="grid gap-8 sm:grid-cols-2">

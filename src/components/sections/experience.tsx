@@ -6,7 +6,6 @@ import { experience } from "@/lib/data";
 export function Experience() {
   return (
     <section id="experience" className="mx-auto max-w-5xl border-t border-border px-6 py-16">
-      <p className="mb-2 font-mono text-xs uppercase tracking-[0.2em] text-signal">Sheet 03</p>
       <h2 className="mb-10 font-display text-2xl font-bold text-ink">Experience</h2>
 
       <ol className="relative space-y-10 border-l border-border pl-8">
