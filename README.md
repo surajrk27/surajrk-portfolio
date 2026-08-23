@@ -31,18 +31,6 @@ src/
     └── utils.ts           # cn() class merge helper
 ```
 
-# Suraj Khandbale — Portfolio
-
-Built with Next.js 14 (App Router), TypeScript, Tailwind CSS, and Framer Motion.
-
-## Getting started
-
-```bash
-npm install
-npm run dev
-```
-
-Open http://localhost:3000. The grid-overlay toggle in the nav drops a 12-column baseline grid over the page, for checking layout against the Figma handoff.
 
 ## Before deploying
 
