@@ -6,7 +6,6 @@ import { education } from "@/lib/data";
 export function Education() {
   return (
     <section id="education" className="mx-auto max-w-5xl border-t border-border px-6 py-16">
-      <p className="mb-2 font-mono text-xs uppercase tracking-[0.2em] text-signal">Sheet 05</p>
       <h2 className="mb-10 font-display text-2xl font-bold text-ink">Education</h2>
 
       <div className="grid gap-5 sm:grid-cols-2">

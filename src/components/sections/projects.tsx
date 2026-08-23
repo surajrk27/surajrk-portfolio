@@ -29,7 +29,6 @@ export function Projects() {
     <section id="projects" className="mx-auto max-w-5xl border-t border-border px-6 py-16">
       <div className="mb-10 flex items-baseline justify-between">
         <div>
-          <p className="mb-2 font-mono text-xs uppercase tracking-[0.2em] text-signal">Sheet 02</p>
           <h2 className="font-display text-2xl font-bold text-ink">Selected projects</h2>
         </div>
         <p className="font-mono text-xs text-muted" aria-hidden="true">
