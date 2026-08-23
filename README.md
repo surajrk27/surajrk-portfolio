@@ -30,10 +30,3 @@ src/
     ├── data.ts            # All resume content, single source of truth
     └── utils.ts           # cn() class merge helper
 ```
-
-
-## Before deploying
-
-- Replace `https://surajkhandbale.dev` in `layout.tsx`, `sitemap.ts`, and `robots.ts` with your real domain.
-- Add a real Open Graph image and favicon under `public/`.
-- Update `profile.linkedin` in `src/lib/data.ts` with your actual LinkedIn URL.
