@@ -35,6 +35,12 @@ export function ProjectCard({ project }: { project: Project }) {
           </li>
         ))}
       </ul>
+
+      {project.outcome && (
+        <p className="mt-4 border-t border-border pt-3 font-mono text-[11px] leading-relaxed text-signal">
+          ↳ {project.outcome}
+        </p>
+      )}
     </motion.article>
   );
 }

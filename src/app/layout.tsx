@@ -13,7 +13,7 @@ const plexSans = IBM_Plex_Sans({
 });
 const jbMono = JetBrains_Mono({ subsets: ["latin"], variable: "--font-jbmono", display: "swap" });
 
-const siteUrl = "https://surajkhandbale.dev";
+const siteUrl = "https://surajrk-portfolio.vercel.app";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
