@@ -90,6 +90,7 @@ export function CommandPalette() {
   const inputRef = useRef<HTMLInputElement>(null);
   const triggerRef = useRef<HTMLButtonElement>(null);
   const listRef = useRef<HTMLUListElement>(null);
+  const panelRef = useRef<HTMLDivElement>(null);
 
   const close = () => setOpen(false);
   const items = useCommandItems(close);
@@ -127,14 +128,21 @@ export function CommandPalette() {
     if (open) {
       setQuery("");
       setActiveIndex(0);
+      const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
       document.body.style.overflow = "hidden";
+      if (scrollbarWidth > 0) {
+        document.body.style.paddingRight = `${scrollbarWidth}px`;
+      }
+        
       requestAnimationFrame(() => inputRef.current?.focus());
     } else {
       document.body.style.overflow = "";
+      document.body.style.paddingRight = "";
       triggerRef.current?.focus();
     }
     return () => {
       document.body.style.overflow = "";
+      document.body.style.paddingRight = "";
     };
   }, [open]);
 
@@ -147,6 +155,17 @@ export function CommandPalette() {
       ?.querySelector(`[data-index="${activeIndex}"]`)
       ?.scrollIntoView({ block: "nearest" });
   }, [activeIndex]);
+
+  useEffect(() => {
+    if (!open) return;
+      function onPointerDown(e: MouseEvent) {
+        if (panelRef.current && !panelRef.current.contains(e.target as Node)) {
+          close();
+        }
+      }
+        document.addEventListener("mousedown", onPointerDown);
+        return () => document.removeEventListener("mousedown", onPointerDown);
+    }, [open]);
 
   function onDialogKeydown(e: React.KeyboardEvent) {
     if (e.key === "Escape") {
@@ -187,6 +206,7 @@ export function CommandPalette() {
           onClick={close}
         >
           <div
+            ref={panelRef}
             role="dialog"
             aria-modal="true"
             aria-label="Command palette"

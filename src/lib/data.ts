@@ -3,8 +3,7 @@ export const profile = {
   role: "Senior Frontend Engineer",
   location: "Pune, India",
   email: "surajkhandbale@gmail.com",
-  phones: ["8554057290", "7972624283"],
-  linkedin: "https://www.linkedin.com/in/suraj-khandbale-7b33ba14b",
+  linkedin: "https://www.linkedin.com/in/suraj-khandbale",
   summary:
     "Senior Frontend Engineer with 6+ years building scalable, high-performance web applications with React, Next.js, Angular, and Vue. I translate Figma and Zeplin designs into responsive, accessible, pixel-perfect interfaces, with a focus on component-driven architecture, state management, and performance.",
   tagline: "6+ years shipping component-driven, accessible frontends — from Figma handoff through state management and API integration — across EdTech, fintech, and SaaS products.",
@@ -58,17 +57,19 @@ export type Project = {
   period: string;
   description: string;
   tags: string[];
+  outcome?: string;
 };
 
 export const projects: Project[] = [
   {
     id: "lms",
-    title: "Learning Management System",
+    title: "Hubble VLeap — Learning Management System",
     company: "HubbleHox",
     period: "2023 — Present",
     description:
-      "Redesigned an enterprise LMS with a fully responsive architecture, rebuilding shared UI into reusable components to cut development effort across the platform.",
+      "Rebuilt an enterprise LMS front end on a fully responsive, component-driven architecture — course and program management, assessments, certifications, webinars, and analytics across B2B, B2C, and government. Built a shared CSS token layer from the style guide and moved server state to TanStack Query.",
     tags: ["React.js", "Material UI", "Tailwind CSS", "TanStack Query"],
+    outcome: "Lighthouse ~64 → ~86 on key screens · ~30% fewer redundant API calls",
   },
   {
     id: "survey-builder",
@@ -76,25 +77,25 @@ export const projects: Project[] = [
     company: "HubbleHox",
     period: "2023 — Present",
     description:
-      "Built a multi-level survey platform with conditional logic, customizable workflows, and real-time previews for academic and non-academic survey teams.",
-    tags: ["Angular 16", "Component architecture", "Real-time preview"],
+      "A multi-level survey platform with conditional logic, customizable workflows, and real-time preview for academic and non-academic survey teams. Also revamped the Survey Management App (Venue Management System) and built its cluster-based analytics dashboard.",
+    tags: ["Angular 16", "Vue.js / Vuetify", "Real-time preview", "Data-viz"],
   },
   {
-    id: "staff-selection",
-    title: "Hubble STAR™ (Smart Staff Selection)",
-    company: "HubbleHox",
-    period: "2023 — Present",
+    id: "programa",
+    title: "Programa",
+    company: "BigBinary (client)",
+    period: "2021 — 2023",
     description:
-      "Frontend for a staff evaluation and selection workflow, built with reusable design patterns shared across the HubbleHox product suite.",
-    tags: ["React.js", "Design systems"],
+      "A platform for design studios, built for an Australian client. Translated Figma into a responsive UI across 10+ pages, built a reusable Sidebar component used platform-wide, and optimized the experience for mobile.",
+    tags: ["React.js", "Figma to code", "Component architecture"],
   },
   {
-    id: "neetocode",
-    title: "neetoCode & BigBinary Academy",
+    id: "neeto",
+    title: "neetoCode, neetoKB & BigBinary Academy",
     company: "BigBinary",
     period: "2021 — 2023",
     description:
-      "Contributed to two SaaS products serving thousands of users, improving usability, accessibility, and platform performance within a component-driven codebase.",
+      "Across the neeto SaaS suite: revamped the neetoCode home, communities, and header; unified neetoKB across three themes; and co-led a React + Next.js rebuild of BigBinary Academy, plus authored CSS curriculum exercises for it.",
     tags: ["React.js", "Next.js", "Accessibility"],
   },
   {
@@ -112,7 +113,7 @@ export const projects: Project[] = [
     company: "Webonise",
     period: "2019 — 2021",
     description:
-      "A cross-publisher eBook platform for tax and legal professionals; optimized for a seamless reading experience across mobile and desktop.",
+      "A first-of-its-kind cross-publisher eBook platform for tax and legal professionals; optimized for a seamless reading experience across mobile and desktop.",
     tags: ["SCSS", "Bootstrap", "Responsive design"],
   },
 ];
